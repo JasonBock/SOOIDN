@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOOIDN.Api", "SOOIDN.Api\SOOIDN.Api.csproj", "{AA3DE7F9-CE2B-43DA-BC4C-60EEB03020F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOOIDN.Api", "SOOIDN.Api\SOOIDN.Api.csproj", "{AA3DE7F9-CE2B-43DA-BC4C-60EEB03020F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOOIDN.Client", "SOOIDN.Client\SOOIDN.Client.csproj", "{71BD775B-2C39-4B06-A3FD-042C3C843E13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOOIDN.Client", "SOOIDN.Client\SOOIDN.Client.csproj", "{71BD775B-2C39-4B06-A3FD-042C3C843E13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOOIDN.Api.Tests", "SOOIDN.Api.Tests\SOOIDN.Api.Tests.csproj", "{57A6074C-1BD9-422F-8F62-586B2CAFAE89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{71BD775B-2C39-4B06-A3FD-042C3C843E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71BD775B-2C39-4B06-A3FD-042C3C843E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71BD775B-2C39-4B06-A3FD-042C3C843E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A6074C-1BD9-422F-8F62-586B2CAFAE89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A6074C-1BD9-422F-8F62-586B2CAFAE89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A6074C-1BD9-422F-8F62-586B2CAFAE89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A6074C-1BD9-422F-8F62-586B2CAFAE89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

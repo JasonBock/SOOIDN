@@ -3,11 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <LangVersion>latest</LangVersion>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Logging\ILogger.cs~RF9beb0bf.TMP" />
-  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
