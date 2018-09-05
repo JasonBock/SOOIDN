@@ -13,7 +13,7 @@ namespace SOOIDN.Api.Tests.Controllers
 	public static class CollatzControllerTests
 	{
 		[Test]
-		public static void CreateWithNull() => 
+		public static void CreateWithNull() =>
 			Assert.That(() => new CollatzController(null), Throws.TypeOf<ArgumentNullException>());
 
 		[Test]
@@ -29,6 +29,11 @@ namespace SOOIDN.Api.Tests.Controllers
 
 			Assert.That(result.StatusCode, Is.EqualTo(200));
 			Assert.That(resultValue.Count, Is.EqualTo(5));
+			Assert.That(resultValue[0], Is.EqualTo(new BigInteger(5)));
+			Assert.That(resultValue[1], Is.EqualTo(new BigInteger(8)));
+			Assert.That(resultValue[2], Is.EqualTo(new BigInteger(4)));
+			Assert.That(resultValue[3], Is.EqualTo(new BigInteger(2)));
+			Assert.That(resultValue[4], Is.EqualTo(new BigInteger(1)));
 
 			logger.Verify();
 		}

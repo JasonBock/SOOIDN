@@ -12,10 +12,8 @@ namespace SOOIDN.Api
 	{
 		private const string ApiName = "Collatz Conjecture API";
 
-		public Startup(IConfiguration configuration)
-		{
+		public Startup(IConfiguration configuration) => 
 			this.Configuration = configuration;
-		}
 
 		public void ConfigureContainer(ContainerBuilder builder) =>
 			builder.RegisterModule(new ApiModule());

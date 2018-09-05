@@ -36,11 +36,11 @@ namespace SOOIDN.Api.Controllers
 				this.logger.Log(
 					$"{nameof(CollatzController)}.{nameof(CollatzController.Get)}, sequence length for {value} is {sequence.Count}");
 
-				return Ok(sequence);
+				return this.Ok(sequence);
 			}
 			else
 			{
-				return BadRequest($"The given value, {value}, is not a valid integer.");
+				return this.BadRequest($"The given value, {value}, is not a valid integer.");
 			}
 		}
 	}
